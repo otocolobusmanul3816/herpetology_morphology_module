@@ -9,3 +9,10 @@ This is the repository for the CT scans, color codes, and morphometrics that we 
 ### To complete this project we will be using a software called 3D Slicer and utilizing the package SlicerMorph. 
 ![some image](https://raw.githubusercontent.com/SlicerMorph/SlicerMorph.github.io/refs/heads/master/husky_wide.png)
 Learn more about [3DSlicer](https://slicermorph.github.io/) and [SlicerMorph](https://www.slicer.org/) on their website.
+
+<p align="center">
+  <img src="Figure1.png" alt="Figure" width="800">
+</p>
+
+# Keeled slug-eating snake (Pareas carinatus)
+Slug Snakes are Cool!
