@@ -11,7 +11,7 @@ This is the repository for the CT scans, color codes, and morphometrics that we 
 Learn more about [3DSlicer](https://slicermorph.github.io/) and [SlicerMorph](https://www.slicer.org/) on their website.
 
 <p align="center">
-  <img src="Figure1.png" alt="Figure" width="800">
+  <img src="figure1.png" alt="Figure" width="800">
 </p>
 
 # Keeled slug-eating snake (Pareas carinatus)
