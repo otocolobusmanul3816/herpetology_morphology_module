@@ -1,5 +1,5 @@
 # BIOL5570 Morphology Module 2026
-This is the repository for the CT scans, color codes, and morphometrics that we will be using through out this semester. 
+This will be our central hub for our morphology project this semester. 
 
 ## In this repository you will find several things:
 1. The microCT scans for each of your specimens
@@ -10,9 +10,3 @@ This is the repository for the CT scans, color codes, and morphometrics that we 
 ![some image](https://raw.githubusercontent.com/SlicerMorph/SlicerMorph.github.io/refs/heads/master/husky_wide.png)
 Learn more about [3DSlicer](https://slicermorph.github.io/) and [SlicerMorph](https://www.slicer.org/) on their website.
 
-<p align="center">
-  <img src="figure1.png" alt="Figure" width="800">
-</p>
-
-# Keeled slug-eating snake (Pareas carinatus)
-Slug Snakes are Cool!
