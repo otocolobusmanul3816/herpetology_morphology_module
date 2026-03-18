@@ -1,16 +1,18 @@
 # Herpetology: Digital Morphology Laboratory
 
-## Digital Morphology: Week 1
-### Table of Contents
-1. Instructions for creating an instance on the MorphoCloud
-2. The repository housing our snake skull
-
-To complete this project we will be using a software called 3D Slicer and utilizing the package SlicerMorph. 
+To complete this project we will be using a software called 3D Slicer and utilizing the package MorphoDepot. 
 <p align="center">
   <img src="https://raw.githubusercontent.com/SlicerMorph/SlicerMorph.github.io/refs/heads/master/husky_wide.png" width="400">
 </p>
 
 Learn more about [3DSlicer](https://slicermorph.github.io/) and [SlicerMorph](https://www.slicer.org/) on their website.
+
+## Table of Contents
+1. Creating an instance on the MorphoCloud (to be completed *before* lab)
+2. Setting up MorphoDepot
+3. Using MorphoDepot for segmenting the skull of *N. rhombifer*
+
+# Digital Morphology: Week 1
 
 ## MorphoCloud Set-up Instructions
 
@@ -107,6 +109,17 @@ This step will open a dialogue called **Instance Creation Progress**. Once all b
 ### Final Step
 
 Take a screenshot of your GitHub dialogue (including **muratmaga’s approval** and the **green checkmarks**) and submit it to the Canvas assignment.
+
+## Setting up MorphoDepot
+
+MorphoDepot is a web-based platform designed specifically for organizing, sharing, and collaboratively segmenting large volumetric datasets such as CT scans. It allows multiple users to work on and track segmentation progress in a centralized environment facilitated through GitHub.
+
+<p align="center">
+  <img src="https://github.com/MorphoCloud/SlicerMorphoDepot/blob/main/MorphoDepot.png" width="200">
+</p>
+
+Learn more about [MorphoDepot](https://github.com/MorphoCloud/SlicerMorphoDepot) on their GitHub repository. 
+
 
 ## Digital Morphology: Week 2 & 3
 ### Table of Contents
