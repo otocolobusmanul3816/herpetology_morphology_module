@@ -245,7 +245,7 @@ The instructor will go through and assign the issues to you. Once your issue has
 
 Open 3D Slicer from the desktop of your instance. 
 
-At the top of the window you will see a dropdown. Navigate to SlicerMorph → MorphoDepot.
+At the top of the window you will see a module list dropdown. Navigate to SlicerMorph → MorphoDepot.
 
 <img src="https://github.com/Slicer/Slicer/releases/download/docs-resources/user_interface_module_toolbar.png" width="400">
 
@@ -265,7 +265,7 @@ MorphoDepot will open a set of tabs on the left side of your screen:
   
 ### Step 5: Finding your boen and completing your segmentation
 
-Switch to the Data Module (button resembling a bulleted list).
+Switch to the Data Module via the module list dropdown.
 
 Drag your file into the 3D window (blue) to visualize a 3D estimate representing the grey-scale values present in the slices.
 
@@ -277,9 +277,74 @@ Drag your file into the 3D window (blue) to visualize a 3D estimate representing
   *Image source: <a href="https://github.com/Slicer/Slicer/releases/download/docs-resources/drag_to_view.gif">Slicer Community, GitHub</a>*
 </p>
 
-For keyboard and mouse shortcuts for manipulating your data check out the [3DSlicer User Interface](https://slicer.readthedocs.io/en/latest/user_guide/user_interface.html)
+For keyboard and mouse shortcuts useful for manipulating your data check out the [3DSlicer User Interface](https://slicer.readthedocs.io/en/latest/user_guide/user_interface.html)
 
-Switch to the Markups Module.
+Open the Markups Module via the module list dropdown. Remember, you can use the models on the [Blackburn Lab's ScetchFab](https://sketchfab.com/ufherps/collections/colors-of-skull-anatomy-938d312dab0c48f8960d5ed259883b21) to help locate your bones.
+
+Select 'Point List' and place your point on your assigned bone in the 3D model. 
+
+Expand the 'Control Points' drop down and right click on the table containing your point.
+
+Select 'Jump Slices'. 
+	- You should now see your point, and thus your bone, reflected in all four windows.
+
+Switch back to the Segment Editor Module via the module list dropdown. 
+
+We are going to begin the segmentation process by setting the threshold of greyscale values that are representative of our Region of Interest (ROI). Which in this case is bone. 
+
+- Select the thresholding tool
+	
+<p align="center">
+  <img src="https://github.com/Slicer/Slicer/releases/download/docs-resources/module_segmenteditor_threshold.png" width="50">
+</p>
+
+- Scroll down to find a blue adjustment bar. Adjust the bar so that only the white material (bone) in the red, green, and yellow windows are pulsing green.
+- Once you are satisfied with your selection, click 'use for masking'.
+
+You should now be automatically transported to the Paint tool. 
+
+<p align="center">
+  <img src="https://github.com/Slicer/Slicer/releases/download/docs-resources/module_segmenteditor_paint.png" width="50">
+</p>
+
+- Check 'Sphere brush'.
+  	- We are now preparing to color in the bones in three demensions. It is important to note that when you are coloring in the bone you are not only coloring the current image but also those directly in front and behind your position. Make sure to scroll forwards and backwards while coloring to ensure that you are [1] staying in the lines and [2] capturing every aspect of your bone.
+
+- Expand one of the slice windows.
+  	- When selecting which window you want to expand, consider the shape of your bone. If you have a long bone, like the compound, you might not want to work from the red window (this window scrolls from nose to back of the skull). Rather, either the green (top to bottom) or yellow (left to right) windows would be more efficient because the distance you will need to travel will be shorter.
+ 
+You can now color in the bone. If you get outside the lines in any one place you can toggle to the Erase tool. 
+
+<p align="center">
+  <img src="https://github.com/Slicer/Slicer/releases/download/docs-resources/module_segmenteditor_erase.png" width="50">
+</p>
+
+You can check your segmentation process by selecting 'Show 3D' and navigating to the blue window. 
+
+Once you are done, we will need to name our segmentation and change the color of the bone.
+	- Double-click on the segment that you have created and insert the name of the bone in the naming field. 
+		- *Example*: Left Compound
+	- Click to change the color next. 
+		- Toggle from the Basic tab to Labels
+		- Expand the drop-down and click on 'Files'
+		- There will now be a color profile called "Jaimi Gray Tetrapod Skulls" for you to select. 
+			- This does not have *every* tetrapod skull bone but it is fairly comprehensive. Find, or search for, your bone in the list and select the correct color. 
+
+Now, you will need to submit your completed segmentation for your instructor to review. 
+
+### Step 6: Submit your segmentation for review
+
+Switch to the MorphoDepot Module via the module list dropdown. 
+- You should still be in the Annotate tab of MorphoDepot.
+
+In the Commit Message box, tell me a bit about your segmentation.
+- What did you accomplish?
+- What was the biggest challenge?
+
+Then click, 'Commit and Push'. 
+
+Finally, click 'Request PR Review'. 
+- This will send your instructor a notification that you have completed and submitted the assignment. Your instructor will then open and review your submission. They may return for corrections if you made a major error (included the wrong bone, missed a large portion of your assigned bone, etc). 
 
 </details>
 
