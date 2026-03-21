@@ -8,12 +8,12 @@ To complete this project we will be using a software called 3D Slicer and utiliz
 Learn more about [3DSlicer](https://slicermorph.github.io/) and [SlicerMorph](https://www.slicer.org/) on their website.
 
 ## Table of Contents
-1. Creating an instance on the MorphoCloud (to be completed *before* lab)
-2. Setting up MorphoDepot
-3. Using MorphoDepot for segmenting the skull of *N. rhombifer*
-
-# Digital Morphology: Week 1
-
+   
+### Digital Morphology: Week 1
+  
+<details>
+<summary>MorphoCloud Set-up Instructions</summary>
+  
 ## MorphoCloud Set-up Instructions
 
 MorphoCloud is an online repository for storing, sharing, and exploring 3D morphological datasets such as CT scans and surface models. It is closely integrated with 3D Slicer, allowing users to directly access and visualize datasets within the software for analysis and teaching.
@@ -110,6 +110,11 @@ This step will open a dialogue called **Instance Creation Progress**. Once all b
 
 Take a screenshot of your GitHub dialogue (including **muratmaga’s approval** and the **green checkmarks**) and submit it to the Canvas assignment.
 
+</details>
+
+<details>
+<summary>MorphoDepot Set-up Instructions</summary>
+  
 ## Setting up MorphoDepot
 
 MorphoDepot is a web-based platform designed specifically for organizing, sharing, and collaboratively segmenting large volumetric datasets such as CT scans. It allows multiple users to work on and track segmentation progress in a centralized environment facilitated through GitHub.
@@ -120,11 +125,166 @@ MorphoDepot is a web-based platform designed specifically for organizing, sharin
 
 Learn more about [MorphoDepot](https://github.com/MorphoCloud/SlicerMorphoDepot) on their GitHub repository. 
 
+### Step 1: Activate your MorphoCloud Instance
 
-## Digital Morphology: Week 2 & 3
-### Table of Contents
-1. The python code supporting the download of your species
-2. 
+Open the instance that you created before class in GitHub. The easiest way to find this is by going to your most recent email from the github-actions[bot]
+
+In the chat box at the bottom type: /unshelve
+
+Click ‘Comment’ 
+- This will tell GitHub to unshelve your instance for three hours and send you an access code.
+
+Open your email - you should receive an email from MorphoCloudPortal with your access information. 
+- Click on the link for Web Connect
+- Your username will be exouser
+- Copy the Passphrase located under ‘Credentials’ in your email and paste it when prompted into the password window. 
+
+### Step 2: Log in to your GitHub through the terminal
+
+Open the terminal window on the left side of your screen. 
+	
+Copy and paste this command into the terminal: 
+
+```
+gh auth login
+```
+	
+Push ‘enter’ on your keyboard to run the command line. 
+- This will pop up with several command lines for you to answer before entering your login information. You may need to complete two-factor authentication, so keep your phone handy.
+
+You have successfully completed your login process when you receive ‘Congratulations, you're all set!’ in your Firefox window and your terminal displays your account information.
+- You can also verify this step by using this command in the terminal:
+
+```
+gh auth status
+```
+
+### Step 3: Creating an Issue
+
+Navigate to the repository for the [Nerodia Segmentaiton Laboratory](https://github.com/otocolobusmanul3816/Nerodia_Segmentation_Laboratory)
+	
+In the top left corner, select the ‘Issues’ tab, then open a New Issue. 
+
+The title should be your last name followed by the bone you were assigned. 
+
+
+<details>
+<summary>Student Bone Assignments (click to expand)</summary>
+
+<table>
+<tr>
+  <td valign="top">
+
+### Left (L)
+| Student    | Bone Assignment |
+|------------|----------------|
+| Student 1  | Palatine       |
+| Student 2  | Maxilla        |
+| Student 3  | Prootic        |
+| Student 4  | Dentary        |
+| Student 5  | Quadrate       |
+| Student 6  | Pterygoid      |
+| Student 7  | Compound       |
+| Student 8  | Ectopterygoid  |
+| Student 9  | Prefrontal     |
+
+  </td>
+  <td valign="top">
+
+### Right (R)
+| Student    | Bone Assignment |
+|------------|----------------|
+| Student 10 | Palatine       |
+| Student 11 | Prefrontal     |
+| Student 12 | Pterygoid      |
+| Student 13 | Prootic        |
+| Student 14 | Quadrate       |
+| Student 15 | Dentary        |
+| Student 16 | Compound       |
+| Student 17 | Ectopterygoid  |
+
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+
+### Both sides (L&R)
+| Student    | Bone Assignment |
+|------------|----------------|
+| Student 18 | Supratemporal  |
+| Student 19 | Angular        |
+| Student 20 | Stapes         |
+| Student 21 | Postorbital    |
+| Student 22 | Splenial       |
+
+  </td>
+  <td valign="top">
+
+### Paired Bones
+| Student    | Bone Assignment |
+|------------|----------------|
+| Student 23 | Exoccipital    |
+| Student 24 | Frontal        |
+| Student 25 | Parabasisphenoid |
+| Student 26 | Supraoccipital |
+| Student 27 | Vomer          |
+| Student 28 | Septomaxilla   |
+| Student 29 | Premaxilla     |
+| Student 30 | Nasal          |
+| Student 31 | Parietal       |
+
+  </td>
+</tr>
+</table>
+
+</details>
+
+The instructor will go through and assign the issues to you. Once your issue has been assigned, you can proceed to Step 4. 
+
+### Step 4: Opening Files from MorphoDepot
+
+Open 3D Slicer from the desktop of your instance. 
+
+At the top of the window you will see a dropdown. Navigate to SlicerMorph → MorphoDepot.
+
+<img src="https://github.com/Slicer/Slicer/releases/download/docs-resources/user_interface_module_toolbar.png" width="400">
+
+You will get several dialogue boxes that ask about installing python codes and creating folders. Select ‘OK’ for all of these pop-ups. 
+
+MorphoDepot will open a set of tabs on the left side of your screen: 
+1. Configure:
+   - Insert your GitHub username and email into the fields and hit ‘Apply’ 
+2. Search:
+   This is how you figure out if you loaded your GitHub information into the terminal correctly.
+   - Select ‘Load Searchable Repository Data’
+   - If this proceeds and pulls up a list of scans you can move on to the Annotate tab.
+3. Annotate:
+   - Select ‘Refresh GitHub’.
+   - You should now see the issue that you created in the Assigned Issues box. Double-click on the issue, and allow 3D slicer to close the scene to open the file.
+   - You will now be transported to the Segment Editor module.
+  
+### Step 5: Finding your boen and completing your segmentation
+
+Switch to the Data Module (button resembling a bulleted list).
+
+Drag your file into the 3D window (blue) to visualize a 3D estimate representing the grey-scale values present in the slices.
+
+<p align="center">
+  <img src="https://github.com/Slicer/Slicer/releases/download/docs-resources/drag_to_view.gif" width="400">
+</p>
+
+<p align="center">
+  *Image source: <a href="https://github.com/Slicer/Slicer/releases/download/docs-resources/drag_to_view.gif">Slicer Community, GitHub</a>*
+</p>
+
+For keyboard and mouse shortcuts for manipulating your data check out the [3DSlicer User Interface](https://slicer.readthedocs.io/en/latest/user_guide/user_interface.html)
+
+Switch to the Markups Module.
+
+</details>
+
+
+## Digital Morphology: Week 2
 
 
 
