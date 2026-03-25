@@ -349,7 +349,35 @@ Finally, click 'Request PR Review'.
 </details>
 
 
-## Digital Morphology: Week 2
+### Digital Morphology: Week 2
 
+<details>
+<summary>Loading in the data</summary>
+
+## Loading in the Data
+
+This week, we will be breaking up into our project groups and beginning to collect data on our specimens. This may include taking physical measurements, segmentation of bones, and/or geometric morphometrics.
+
+To begin, we need to load our data into our instance. Unshelve your instance and open it in a browser window. 
+
+Navigate to the terminal. 
+
+Insert this command line into the terminal and hit enter: 
+
+```
+curl https://jetstream2.exosphere.app/exosphere/assets/scripts/mount_ceph.py | sudo python3 - mount \
+  --access-rule-name="Lauren_USU_Share-rw" \
+  --access-rule-key="AQBYGqppMtt/HhAA/aW6RIff88fqeX0d73ri+Q==" \
+  --share-path="149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/0f0b9055-c3f5-4332-bb90-5b785c01b81a/2ab3f1cd-1335-431c-aa7a-3a01f15e2957" \
+  --share-name="Lauren_USU_Share"
+```
+
+This code will download a folder called Lauren_USU_Share that contains all of your project files. 
+
+Open 3D Slicer and drag your species file into the 3D Slicer window. 
+
+Begin by creating your 3D model and identifying the structures that your group is interested in. Review the instructions from Week 1 if you need help remembering how to do this. 
+
+</details>
 
 
